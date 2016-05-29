@@ -1,5 +1,5 @@
 class MemberController < ApplicationController
-  def view
+  def self.view
     @member = params[:name];
   end
 end
