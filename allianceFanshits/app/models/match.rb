@@ -7,7 +7,7 @@ class Match < ActiveRecord::Base
 
 
 		logger.info "ran whenever job"
-
+		
 
 	end
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160525094533) do
+ActiveRecord::Schema.define(version: 20160529140624) do
 
   create_table "details", force: :cascade do |t|
     t.integer  "match_id",        limit: 4, null: false
@@ -72,6 +72,13 @@ ActiveRecord::Schema.define(version: 20160525094533) do
     t.string   "member_id",  limit: 255, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "variables", id: false, force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "value",      limit: 255, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end

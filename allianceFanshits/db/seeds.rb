@@ -19,3 +19,8 @@ SteamId.create(:steam_key => '3916428', :member_id => 'Egm')
 SteamId.create(:steam_key => '101495620', :member_id => 'Loda')
 SteamId.create(:steam_key => '41231571', :member_id => 's4')
 
+Variable.create(:name => 'steam_api_key', :value => 'C9F93D9BC8795130095EC74A1B1B8CD3')
+Variable.create(:name => 'steam_base_url' , :value => 'http://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001')
+
+
+
